@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Foodee</title>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <!-- sidebar -->
+      <div class="w-64 h-screen overflow-hidden">
+        <div class="flex flex-col justify-between h-full px-5 py-8">
+          <div class="mx-auto">
+            <!-- title -->
+            <div
+              class="text-4xl mb-5 text-center"
+              style="font-family: 'Itim', 'cursive'"
+            >
+              Foodee
+            </div>
+            <!-- profile -->
+            <div>
+              <div class="border p-1.5 rounded-full w-fit mx-auto">
+                <div class="h-16 w-16 rounded-full overflow-hidden relative">
+                  <img
+                    class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="./assets/images/chef.png"
+                  />
+                </div>
+              </div>
+              <div class="text-center">
+                <h3 class="text-xl" style="font-family: 'Itim', 'cursive'">
+                  Merry Clinton
+                </h3>
+                <div class="text-gray-600 text-sm">Chef at Rolex</div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="ri-heart-fill text-red-500"></i>
+                  <div class="text-gray-700">255</div>
+                </div>
+              </div>
+            </div>
+            <!-- menu items -->
+            <div class="mx-auto mt-14">
+              <a
+                href="#"
+                class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3"
+              >
+                <i class="ri-book-read-fill"></i>
+                Recipes
+              </a>
+              <a
+                href="#"
+                class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3"
+              >
+                <i class="ri-heart-fill"></i>
+                Favourites
+              </a>
+              <a
+                href="#"
+                class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3"
+              >
+                <i class="ri-award-fill"></i>
+                Courses
+              </a>
+              <a
+                href="#"
+                class="flex items-center gap-2 text-gray-500 hover:text-gray-800 mb-3"
+              >
+                <i class="ri-global-fill"></i>
+                Community
+              </a>
+            </div>
+          </div>
+          <div class="text-center text-gray-700 bg-red-100 p-2 rounded-md">
+            <i class="ri-star-fill text-3xl text-yellow-500"></i>
+            <div>
+              Buy premium for advanced
+              <a class="underline cursor-pointer">Features</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main -->
+      <div class="bg-red-50 w-full h-screen overflow-y-scroll p-8">
+        <!-- top bar -->
+        <div class="flex justify-between items-ceter">
+          <div class="flex items-center gap-2 border-b border-gray-400 pb-1">
+            <i class="ri-search-line text-gray-500"></i>
+            <input
+              placeholder="Search recipes here..."
+              class="bg-transparent w-80 outline-none border-none"
+            />
+          </div>
+          <div
+            class="bg-red-500 px-10 py-2 rounded-md text-white cursor-pointer"
+          >
+            Go to premium
+          </div>
+        </div>
+        <!-- content -->
+        <div>
+          <!-- title -->
+          <div class="flex justify-between items-center mt-10">
+            <div class="flex items-center gap-5">
+              <img class="h-20 w-20" src="./assets/images/fish.png" />
+              <div>
+                <div
+                  class="text-5xl font-bold mb-1"
+                  style="font-family: 'Itim', 'cursive'"
+                >
+                  Only the best recipes!
+                </div>
+                <div class="text-gray-500">Today's new recipies for you</div>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="border-r-2 border-gray-300 pr-5">
+                <div class="text-4xl font-bold">168</div>
+                <div class="text-gray-500">Tutorials</div>
+              </div>
+              <div class="pl-5">
+                <div class="text-4xl font-bold">392</div>
+                <div class="text-gray-500">Recipes</div>
+              </div>
+            </div>
+          </div>
+          <!-- cards -->
+          <div class="grid grid-cols-4 gap-8 mt-10">
+            <div
+              class="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl"
+            >
+              <div class="p-5 pb-0">
+                <img
+                  class="h-32 w-32 mx-auto"
+                  src="./assets/images/food1.png"
+                />
+                <div class="text-lg font-semibold text-center w-full mt-2">
+                  Food name
+                </div>
+                <div
+                  class="text-center text-sm w-full bg-red-50 p-1 my-1 mb-1.5"
+                >
+                  Intermediate
+                </div>
+                <div class="flex items-center justify-between px-5">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">25</div>
+                    <div class="text-sm text-gray-500">min</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">95</div>
+                    <div class="text-sm text-gray-500">cal</div>
+                  </div>
+                  <div class="text-center">
+                    <img
+                      class="mx-auto h-5 w-auto"
+                      src="./assets/images/fish1.png"
+                    />
+                    <div class="text-sm text-gray-500">fish</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center text-gray-700 justify-center gap-2 my-2"
+                >
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div
+                class="bg-red-500 text-center py-2 text-white cursor-pointer"
+              >
+                Start cooking
+              </div>
+            </div>
+            <div
+              class="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl"
+            >
+              <div class="p-5 pb-0">
+                <img
+                  class="h-32 w-32 mx-auto"
+                  src="./assets/images/food1.png"
+                />
+                <div class="text-lg font-semibold text-center w-full mt-2">
+                  Food name
+                </div>
+                <div
+                  class="text-center text-sm w-full bg-red-50 p-1 my-1 mb-1.5"
+                >
+                  Intermediate
+                </div>
+                <div class="flex items-center justify-between px-5">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">25</div>
+                    <div class="text-sm text-gray-500">min</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">95</div>
+                    <div class="text-sm text-gray-500">cal</div>
+                  </div>
+                  <div class="text-center">
+                    <img
+                      class="mx-auto h-5 w-auto"
+                      src="./assets/images/fish1.png"
+                    />
+                    <div class="text-sm text-gray-500">fish</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center text-gray-700 justify-center gap-2 my-2"
+                >
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div
+                class="bg-red-500 text-center py-2 text-white cursor-pointer"
+              >
+                Start cooking
+              </div>
+            </div>
+            <div
+              class="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl"
+            >
+              <div class="p-5 pb-0">
+                <img
+                  class="h-32 w-32 mx-auto"
+                  src="./assets/images/food1.png"
+                />
+                <div class="text-lg font-semibold text-center w-full mt-2">
+                  Food name
+                </div>
+                <div
+                  class="text-center text-sm w-full bg-red-50 p-1 my-1 mb-1.5"
+                >
+                  Intermediate
+                </div>
+                <div class="flex items-center justify-between px-5">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">25</div>
+                    <div class="text-sm text-gray-500">min</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">95</div>
+                    <div class="text-sm text-gray-500">cal</div>
+                  </div>
+                  <div class="text-center">
+                    <img
+                      class="mx-auto h-5 w-auto"
+                      src="./assets/images/fish1.png"
+                    />
+                    <div class="text-sm text-gray-500">fish</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center text-gray-700 justify-center gap-2 my-2"
+                >
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div
+                class="bg-red-500 text-center py-2 text-white cursor-pointer"
+              >
+                Start cooking
+              </div>
+            </div>
+            <div
+              class="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl"
+            >
+              <div class="p-5 pb-0">
+                <img
+                  class="h-32 w-32 mx-auto"
+                  src="./assets/images/food1.png"
+                />
+                <div class="text-lg font-semibold text-center w-full mt-2">
+                  Food name
+                </div>
+                <div
+                  class="text-center text-sm w-full bg-red-50 p-1 my-1 mb-1.5"
+                >
+                  Intermediate
+                </div>
+                <div class="flex items-center justify-between px-5">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">25</div>
+                    <div class="text-sm text-gray-500">min</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">95</div>
+                    <div class="text-sm text-gray-500">cal</div>
+                  </div>
+                  <div class="text-center">
+                    <img
+                      class="mx-auto h-5 w-auto"
+                      src="./assets/images/fish1.png"
+                    />
+                    <div class="text-sm text-gray-500">fish</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center text-gray-700 justify-center gap-2 my-2"
+                >
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div
+                class="bg-red-500 text-center py-2 text-white cursor-pointer"
+              >
+                Start cooking
+              </div>
+            </div>
+            <div
+              class="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl"
+            >
+              <div class="p-5 pb-0">
+                <img
+                  class="h-32 w-32 mx-auto"
+                  src="./assets/images/food1.png"
+                />
+                <div class="text-lg font-semibold text-center w-full mt-2">
+                  Food name
+                </div>
+                <div
+                  class="text-center text-sm w-full bg-red-50 p-1 my-1 mb-1.5"
+                >
+                  Intermediate
+                </div>
+                <div class="flex items-center justify-between px-5">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">25</div>
+                    <div class="text-sm text-gray-500">min</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">95</div>
+                    <div class="text-sm text-gray-500">cal</div>
+                  </div>
+                  <div class="text-center">
+                    <img
+                      class="mx-auto h-5 w-auto"
+                      src="./assets/images/fish1.png"
+                    />
+                    <div class="text-sm text-gray-500">fish</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center text-gray-700 justify-center gap-2 my-2"
+                >
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div
+                class="bg-red-500 text-center py-2 text-white cursor-pointer"
+              >
+                Start cooking
+              </div>
+            </div>
+            <div
+              class="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl"
+            >
+              <div class="p-5 pb-0">
+                <img
+                  class="h-32 w-32 mx-auto"
+                  src="./assets/images/food1.png"
+                />
+                <div class="text-lg font-semibold text-center w-full mt-2">
+                  Food name
+                </div>
+                <div
+                  class="text-center text-sm w-full bg-red-50 p-1 my-1 mb-1.5"
+                >
+                  Intermediate
+                </div>
+                <div class="flex items-center justify-between px-5">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">25</div>
+                    <div class="text-sm text-gray-500">min</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">95</div>
+                    <div class="text-sm text-gray-500">cal</div>
+                  </div>
+                  <div class="text-center">
+                    <img
+                      class="mx-auto h-5 w-auto"
+                      src="./assets/images/fish1.png"
+                    />
+                    <div class="text-sm text-gray-500">fish</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center text-gray-700 justify-center gap-2 my-2"
+                >
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div
+                class="bg-red-500 text-center py-2 text-white cursor-pointer"
+              >
+                Start cooking
+              </div>
+            </div>
+            <div
+              class="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl"
+            >
+              <div class="p-5 pb-0">
+                <img
+                  class="h-32 w-32 mx-auto"
+                  src="./assets/images/food1.png"
+                />
+                <div class="text-lg font-semibold text-center w-full mt-2">
+                  Food name
+                </div>
+                <div
+                  class="text-center text-sm w-full bg-red-50 p-1 my-1 mb-1.5"
+                >
+                  Intermediate
+                </div>
+                <div class="flex items-center justify-between px-5">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">25</div>
+                    <div class="text-sm text-gray-500">min</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">95</div>
+                    <div class="text-sm text-gray-500">cal</div>
+                  </div>
+                  <div class="text-center">
+                    <img
+                      class="mx-auto h-5 w-auto"
+                      src="./assets/images/fish1.png"
+                    />
+                    <div class="text-sm text-gray-500">fish</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center text-gray-700 justify-center gap-2 my-2"
+                >
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div
+                class="bg-red-500 text-center py-2 text-white cursor-pointer"
+              >
+                Start cooking
+              </div>
+            </div>
+            <div
+              class="border rounded-xl bg-white overflow-hidden shadow-md hover:shadow-xl"
+            >
+              <div class="p-5 pb-0">
+                <img
+                  class="h-32 w-32 mx-auto"
+                  src="./assets/images/food1.png"
+                />
+                <div class="text-lg font-semibold text-center w-full mt-2">
+                  Food name
+                </div>
+                <div
+                  class="text-center text-sm w-full bg-red-50 p-1 my-1 mb-1.5"
+                >
+                  Intermediate
+                </div>
+                <div class="flex items-center justify-between px-5">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">25</div>
+                    <div class="text-sm text-gray-500">min</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-semibold leading-none">95</div>
+                    <div class="text-sm text-gray-500">cal</div>
+                  </div>
+                  <div class="text-center">
+                    <img
+                      class="mx-auto h-5 w-auto"
+                      src="./assets/images/fish1.png"
+                    />
+                    <div class="text-sm text-gray-500">fish</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center text-gray-700 justify-center gap-2 my-2"
+                >
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div
+                class="bg-red-500 text-center py-2 text-white cursor-pointer"
+              >
+                Start cooking
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
